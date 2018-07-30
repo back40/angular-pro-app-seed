@@ -23,13 +23,4 @@ export const ROUTES: Routes = [];
 })
 export class AppModule {}
 
-/*
-  var config = {
-    apiKey: "AIzaSyCqWFH4Ur5eK1RtgYiJoJYNv0PmlAf0bbE",
-    authDomain: "fitness-app-9e046.firebaseapp.com",
-    databaseURL: "https://fitness-app-9e046.firebaseio.com",
-    projectId: "fitness-app-9e046",
-    storageBucket: "fitness-app-9e046.appspot.com",
-    messagingSenderId: "850853723442"
-  };
-*/
+

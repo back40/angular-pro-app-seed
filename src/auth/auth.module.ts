@@ -3,6 +3,15 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 //import { AuthComponent } from './auth.component';
+
+// 3rd party
+import { AngularFireModule, FirebaseAppConfig } from 'angularfire2';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+// shared
+import { SharedModule } from './shared/shared.module';
+
 export const ROUTES: Routes = [
   {
     path: 'auth',
@@ -17,7 +26,23 @@ export const ROUTES: Routes = [
   },
 ];
 
+const firebaseConfig: FirebaseAppConfig = {
+    apiKey: "AIzaSyCqWFH4Ur5eK1RtgYiJoJYNv0PmlAf0bbE",
+    authDomain: "fitness-app-9e046.firebaseapp.com",
+    databaseURL: "https://fitness-app-9e046.firebaseio.com",
+    projectId: "fitness-app-9e046",
+    storageBucket: "fitness-app-9e046.appspot.com",
+    messagingSenderId: "850853723442"
+  };
+
 @NgModule({
-  imports: [CommonModule, RouterModule.forChild(ROUTES)],
+  imports: [
+    CommonModule,
+    RouterModule.forChild(ROUTES),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule,
+    AngularFireDatabaseModule,
+    SharedModule.forRoot()
+  ],
 })
 export default class AuthModule {}
