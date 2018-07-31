@@ -10,6 +10,6 @@ export const ROUTES: Routes = [{ path: '', component: RegisterComponent }];
 @NgModule({
   imports: [CommonModule, RouterModule.forChild(ROUTES), SharedModule],
   exports: [],
-  declarations: [RegisterComponent],
+  declarations: [RegisterComponent]
 })
 export class RegisterModule {}

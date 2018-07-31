@@ -20,20 +20,20 @@ export const ROUTES: Routes = [
       { path: 'login', loadChildren: './login/login.module#LoginModule' },
       {
         path: 'register',
-        loadChildren: './register/register.module#RegisterModule',
-      },
-    ],
-  },
+        loadChildren: './register/register.module#RegisterModule'
+      }
+    ]
+  }
 ];
 
 const firebaseConfig: FirebaseAppConfig = {
-    apiKey: "AIzaSyCqWFH4Ur5eK1RtgYiJoJYNv0PmlAf0bbE",
-    authDomain: "fitness-app-9e046.firebaseapp.com",
-    databaseURL: "https://fitness-app-9e046.firebaseio.com",
-    projectId: "fitness-app-9e046",
-    storageBucket: "fitness-app-9e046.appspot.com",
-    messagingSenderId: "850853723442"
-  };
+  apiKey: 'AIzaSyCqWFH4Ur5eK1RtgYiJoJYNv0PmlAf0bbE',
+  authDomain: 'fitness-app-9e046.firebaseapp.com',
+  databaseURL: 'https://fitness-app-9e046.firebaseio.com',
+  projectId: 'fitness-app-9e046',
+  storageBucket: 'fitness-app-9e046.appspot.com',
+  messagingSenderId: '850853723442'
+};
 
 @NgModule({
   imports: [
@@ -43,6 +43,6 @@ const firebaseConfig: FirebaseAppConfig = {
     AngularFireAuthModule,
     AngularFireDatabaseModule,
     SharedModule.forRoot()
-  ],
+  ]
 })
 export default class AuthModule {}

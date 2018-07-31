@@ -8,12 +8,8 @@ import { LoginComponent } from './containers/login/login.component';
 export const ROUTES: Routes = [{ path: '', component: LoginComponent }];
 
 @NgModule({
-  imports: [
-    CommonModule,
-    RouterModule.forChild(ROUTES),
-    SharedModule
-  ],
+  imports: [CommonModule, RouterModule.forChild(ROUTES), SharedModule],
   exports: [],
-  declarations: [LoginComponent],
+  declarations: [LoginComponent]
 })
 export class LoginModule {}
