@@ -45,4 +45,4 @@ const firebaseConfig: FirebaseAppConfig = {
     SharedModule.forRoot()
   ]
 })
-export default class AuthModule {}
+export class AuthModule {}

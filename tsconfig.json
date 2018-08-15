@@ -6,10 +6,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "store": ["src/store.ts"],
-      "src": ["src"],
-      "app": ["src/app"],
-      "@auth": ["src/auth/*"]
+      "store": ["src/store.ts"]
     },
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
