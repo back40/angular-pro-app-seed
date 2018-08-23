@@ -16,18 +16,18 @@ export const ROUTES: Routes = [
     children: [
       { path: '', pathMatch: 'full', redirectTo: 'login' },
       { path: 'login', loadChildren: './login/login.module#LoginModule' },
-      { path: 'register', loadChildren: './register/register.module#RegisterModule' },
+      { path: 'register', loadChildren: './register/register.module#RegisterModule' }
     ]
   }
 ];
 
-export const firebaseConfig: FirebaseAppConfig = {
-  apiKey: "AIzaSyCXz7GrHLBs-xlsCrr185iG4v4UrNreq2Y",
-  authDomain: "fitness-app-e668a.firebaseapp.com",
-  databaseURL: "https://fitness-app-e668a.firebaseio.com",
-  projectId: "fitness-app-e668a",
-  storageBucket: "fitness-app-e668a.appspot.com",
-  messagingSenderId: "1014564696462"
+const firebaseConfig: FirebaseAppConfig = {
+  apiKey: 'AIzaSyCqWFH4Ur5eK1RtgYiJoJYNv0PmlAf0bbE',
+  authDomain: 'fitness-app-9e046.firebaseapp.com',
+  databaseURL: 'https://fitness-app-9e046.firebaseio.com',
+  projectId: 'fitness-app-9e046',
+  storageBucket: 'fitness-app-9e046.appspot.com',
+  messagingSenderId: '850853723442'
 };
 
 @NgModule({
