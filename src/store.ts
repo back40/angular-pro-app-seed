@@ -11,22 +11,22 @@ import { ScheduleItem } from './health/shared/services/schedule/schedule.service
 
 export interface State {
   user: User;
-  [key: string]: any;
-  date: Date;
+  meals: Meal[];
   selected: any;
   list: any;
-  meals: Meal[];
   schedule: ScheduleItem[];
+  date: Date;
   workouts: Workout[];
+  [key: string]: any;
 }
 
 const state: State = {
   user: undefined,
-  date: undefined,
+  meals: undefined,
   selected: undefined,
   list: undefined,
-  meals: undefined,
   schedule: undefined,
+  date: undefined,
   workouts: undefined
 };
 
